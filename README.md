@@ -1,4 +1,4 @@
-# jsonfactory
+# Vue3Boilerplate
 
 ## Project setup
 ```
