@@ -1,0 +1,15 @@
+pull_request_rules:
+  - name: Alert on dependency updates
+    conditions:
+      - files~=package.json
+    actions:
+      label:
+        add:
+          - dependency update
+      comment:
+        message: >-
+          This PR introduces updates to crucial dependencies. Please review and
+          test.
+      assign:
+        users:
+          - iamshubhankarkhare
