@@ -16,9 +16,11 @@ pull_request_rules:
   - name: Auto-rebase on conflict
     conditions:
       - conflict
+      - base=master
     actions:
-      queue:
-        name: my_queue
+      rebase: null
+      comment:
+        message: This PR has been automatically rebased due to a conflict.
 queue_rules:
   - name: my_queue
     conditions:
