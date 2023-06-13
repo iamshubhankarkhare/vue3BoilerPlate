@@ -13,3 +13,14 @@ pull_request_rules:
       assign:
         users:
           - iamshubhankarkhare
+  - name: Auto-rebase on conflict
+    conditions:
+      - conflict
+      - status-success=CI
+    actions:
+      queue:
+        name: my_queue
+queue_rules:
+  - name: my_queue
+    conditions:
+      - base=master
