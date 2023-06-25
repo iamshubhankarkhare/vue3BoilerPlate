@@ -12,7 +12,7 @@
     "ant-design-vue": "^2.2.7",
     "autoprefixer": "^9",
     "postcss": "^7",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.18",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.19",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
