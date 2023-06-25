@@ -13,14 +13,6 @@ pull_request_rules:
       assign:
         users:
           - iamshubhankarkhare
-  - name: Auto-rebase
-    conditions:
-      - files~=package.json
-      - base=master
-    actions:
-      rebase: null
-      comment:
-        message: This PR has been automatically rebased.
   - name: Add in merge queue
     conditions:
       - files~=package.json
