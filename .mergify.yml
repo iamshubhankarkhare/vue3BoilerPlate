@@ -13,14 +13,3 @@ pull_request_rules:
       assign:
         users:
           - iamshubhankarkhare
-  - name: Add in merge queue
-    conditions:
-      - files~=package.json
-      - base=master
-    actions:
-      queue:
-        name: my_queue
-queue_rules:
-  - name: my_queue
-    conditions:
-      - base=master
