@@ -1,3 +1,7 @@
+queue_rules:
+  - name: test
+    merge_conditions:
+      - "#approved-reviews-by>=1"
 pull_request_rules:
   - name: Alert on dependency updates
     conditions:
@@ -13,3 +17,5 @@ pull_request_rules:
       assign:
         users:
           - iamshubhankarkhare
+      queue:
+        
