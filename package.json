@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@tailwindcss/postcss7-compat": "^2.2.19",
-    "ant-design-vue": "^2.2.7",
+    "ant-design-vue": "^2.2.8",
     "autoprefixer": "^9",
     "postcss": "^7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.19",
