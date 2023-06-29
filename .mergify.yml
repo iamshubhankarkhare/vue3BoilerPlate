@@ -1,7 +1,7 @@
 queue_rules:
   - name: default
     merge_conditions:
-      - "#approved-reviews-by>=1"
+      - label=dependency update
 pull_request_rules:
   - name: Alert on dependency updates
     conditions:
