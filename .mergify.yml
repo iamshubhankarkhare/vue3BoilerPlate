@@ -1,7 +1,7 @@
 queue_rules:
   - name: default
     merge_conditions:
-      - label=dependency update
+      - label=merge
 pull_request_rules:
   - name: Alert on dependency updates
     conditions:
