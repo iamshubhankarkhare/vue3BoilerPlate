@@ -97,5 +97,5 @@ app.use(Col)
 app.use(Result)
 
 // ant d components
-
+console.log('app', app)
 app.mount('#app')
