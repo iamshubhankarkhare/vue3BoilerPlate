@@ -3,11 +3,11 @@ queue_rules:
     routing_conditions:
       - label=hotfix
     merge_conditions:
-      - "#approved-reviews-by>=1"
+      - label=hotfix
 
   - name: default
     merge_conditions:
-      - "#approved-reviews-by>=1"
+      - label!=hotfix
 
 pull_request_rules:
   - name: merge using the merge queue
