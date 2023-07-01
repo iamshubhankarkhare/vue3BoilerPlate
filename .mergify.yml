@@ -1,22 +1,17 @@
 queue_rules:
+  - name: hotfix
+    routing_conditions:
+      - label=hotfix
+    merge_conditions:
+      - "#approved-reviews-by>=1"
+
   - name: default
     merge_conditions:
-      - label=merge
+      - "#approved-reviews-by>=1"
+
 pull_request_rules:
-  - name: Alert on dependency updates
+  - name: merge using the merge queue
     conditions:
-      - files~=package.json
+      - base=main
     actions:
-      label:
-        add:
-          - dependency update
-      comment:
-        message: >-
-          This PR introduces updates to crucial dependencies. Please review and
-          test.
-      assign:
-        users:
-          - iamshubhankarkhare
       queue:
-        name: default
-        
