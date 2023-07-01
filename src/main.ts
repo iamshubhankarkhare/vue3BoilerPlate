@@ -95,6 +95,7 @@ app.use(Upload)
 app.use(Row)
 app.use(Col)
 app.use(Result)
+app.config.globalProperties.$message = message
 
 // ant d components
 
