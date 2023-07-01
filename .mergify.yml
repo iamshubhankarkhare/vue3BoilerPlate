@@ -12,6 +12,6 @@ queue_rules:
 pull_request_rules:
   - name: merge using the merge queue
     conditions:
-      - base=main
+      - base=master
     actions:
       queue:
